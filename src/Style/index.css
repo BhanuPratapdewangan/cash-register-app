@@ -37,4 +37,10 @@
     font-size: 1.2rem;
 }
 
+/* label  */
+label {
+    font-size: large;
+    font-weight: bold;
+}
+
 
