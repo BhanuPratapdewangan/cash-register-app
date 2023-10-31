@@ -1,0 +1,11 @@
+{
+  "name": "cash-register-app",
+  "version": "1.0.0",
+  "description": "This is a cash-register-app for mannaging the number of cash",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bhanu Pratap",
+  "license": "ISC"
+}
