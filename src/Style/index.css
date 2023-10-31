@@ -5,7 +5,9 @@
 }
 
 .container-fluid {
-    /* background-image:  */
+    background-image: url('https://img.freepik.com/free-photo/abstract-design-background-smooth-flowing-lines_1048-14640.jpg?size=626&ext=jpg&ga=GA1.1.385704478.1697873263&semt=ais');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .container{
     background-color: rgb(1, 1, 41);
