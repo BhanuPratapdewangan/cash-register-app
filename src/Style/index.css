@@ -1,46 +1,100 @@
-
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
 
-.container-fluid {
-    background-image: url('https://img.freepik.com/free-photo/abstract-design-background-smooth-flowing-lines_1048-14640.jpg?size=626&ext=jpg&ga=GA1.1.385704478.1697873263&semt=ais');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.container{
-    background-color: rgb(1, 1, 41);
-    color: whitesmoke;
-    padding: 1.5rem;
-    border-radius: 2rem;
+@media screen and (orientation : landscape) {
+
+    .container-fluid {
+        background-image: url('https://img.freepik.com/free-photo/abstract-design-background-smooth-flowing-lines_1048-14640.jpg?size=626&ext=jpg&ga=GA1.1.385704478.1697873263&semt=ais');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .container {
+        background-color: rgb(1, 1, 41);
+        color: whitesmoke;
+        padding: 1.5rem;
+        border-radius: 2rem;
+    }
+
+    .billAmount,
+    .cash {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #btn-next,
+    #check-amount {
+        width: 6rem;
+        border-bottom-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+    }
+
+    /* Error message  */
+    #error-message-cash-amount,
+    #error-message-bill-amount {
+        color: red;
+        font-size: 1.1rem;
+    }
+
+    #error-message-completed-transaction {
+        color: green;
+        font-size: 1.2rem;
+    }
+
+    /* label  */
+    label {
+        font-size: large;
+        font-weight: bold;
+    }
 }
 
-.billAmount, .cash {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-#btn-next, #check-amount {
-    width: 6rem;
-    border-bottom-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-}
+@media screen and (orientation : portrait) {
 
-/* Error message  */
-#error-message-cash-amount, #error-message-bill-amount {
-    color: red;
-    font-size: 1.1rem;
-}
-#error-message-completed-transaction {
-    color: green;
-    font-size: 1.2rem;
-}
+    .container-fluid {
+        background-image: url('https://img.freepik.com/free-photo/abstract-design-background-smooth-flowing-lines_1048-14640.jpg?size=626&ext=jpg&ga=GA1.1.385704478.1697873263&semt=ais');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
-/* label  */
-label {
-    font-size: large;
-    font-weight: bold;
+    .container {
+        background-color: rgb(1, 1, 41);
+        color: whitesmoke;
+        padding: 1.5rem;
+        border-radius: 2rem;
+    }
+
+    .billAmount,
+    .cash {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #btn-next,
+    #check-amount {
+        width: 6rem;
+        border-bottom-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+    }
+
+    /* Error message  */
+    #error-message-cash-amount,
+    #error-message-bill-amount {
+        color: red;
+        font-size: 1.1rem;
+    }
+
+    #error-message-completed-transaction {
+        color: green;
+        font-size: 1.2rem;
+    }
+
+    /* label  */
+    label {
+        font-size: large;
+        font-weight: bold;
+    }
 }
-
-
