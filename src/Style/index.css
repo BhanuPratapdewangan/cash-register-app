@@ -4,53 +4,25 @@
     padding: 0px;
 }
 
-/* Container  */
-.container {
-   display: flex;
-   flex-direction: column;
-   padding: 1.5rem;
-   text-align: center;
-   line-height: 3rem;
+.container-fluid {
+    /* background-image:  */
+}
+.container{
+    background-color: rgb(1, 1, 41);
+    color: whitesmoke;
+    padding: 1.5rem;
+    border-radius: 2rem;
 }
 
-/* Heading  */
-#cash-heading {
-    font-size: x-large;   
-}
-
-/* Paragraph  */
-#para {
-    font-size:1.1rem;
-}
-/* Bill amount  */
-#bill-amount, #cash-amount {
-    text-align: center;
-    justify-content: center;
-    width: 15rem;
-    height: 2rem;
-    border-radius: 1rem;
-    border-color: black;
-}
-.billAmount {
+.billAmount, .cash {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 2rem;
 }
-
-.billAmount label {
-    font-size: larger;
-}
-
 #btn-next, #check-amount {
-    margin: 1.5rem;
-    width: 5rem;
-    height: 2rem;
-    background-color: aqua;
-    border: none;
+    width: 6rem;
     border-bottom-left-radius: 1rem;
     border-top-right-radius: 1rem;
-    cursor: pointer;
 }
 
 /* Error message  */
@@ -63,23 +35,8 @@
     font-size: 1.2rem;
 }
 
-/* Other part  */
-#other-part {
-    display: flex;
-    flex-direction: column;
-}
-.cash {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.cash label{
-    font-size: larger;
+/* Table  */
+.table {
+    border-radius: 2rem;
 }
 
-/* Table  */
-table {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}

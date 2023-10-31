@@ -21,7 +21,7 @@ async function validateCashAmount() {
         returnCashAmount = cashAmount.value - billAmount.value;
 
         (returnCashAmount <= 0) ?
-        errorMessageCompleteTransaction(`Transaction completed! because your biil amount : ${billAmount.value} and cash amount ${cashAmount.value} are same.`)
+        errorMessageCompleteTransaction(`Transaction completed! because your biil amount : ${billAmount.value} and cash amount ${cashAmount.value} both are same.`)
         : ReturnNumberOfNotes(returnCashAmount);
 
     } else {
