@@ -56,7 +56,11 @@
 /* Error message  */
 #error-message-cash-amount, #error-message-bill-amount {
     color: red;
-    font-size: 1rem;
+    font-size: 1.1rem;
+}
+#error-message-completed-transaction {
+    color: green;
+    font-size: 1.2rem;
 }
 
 /* Other part  */
@@ -78,7 +82,4 @@ table {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-tr th {
-    column-gap: 15rem;
 }

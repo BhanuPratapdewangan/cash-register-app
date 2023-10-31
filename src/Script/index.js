@@ -4,8 +4,8 @@ const cashAmount = document.querySelector("#cash-amount");  // read a value of c
 
 const checkAmount = document.querySelector("#check-amount");    // read a value of check-amount button from html file.
 const messageBillAmount = document.querySelector("#error-message-bill-amount"); // read a value of error-message-bill-amount paragraph from html file.
-
 const messageCashAmount = document.querySelector("#error-message-cash-amount");
+const messageCompleteTransaction = document.querySelector('#error-message-completed-transaction');
 const notes = document.querySelectorAll('.no-of-notes');    // Number of notes which you given by the customer.
 const bntNext = document.querySelector("#btn-next");        // Go forward on next input (cash-amount).
 const otherPartOfDisplay = document.querySelector('#other-part');   // If you click the next button the display rest of the part of app when you enter the valid input.
@@ -14,13 +14,14 @@ const changeOfNotes = [2000, 500, 200, 100, 50, 20, 10, 5, 1];  // Array of note
 
 // Validation for Cash amount (input part)
 async function validateCashAmount() {
-    messageCashAmount.style.display = 'none';   
+    messageCashAmount.style.display = 'none';  
+    messageCompleteTransaction.style.display = 'none';
+
     if (billAmount.value <= cashAmount.value) {
         returnCashAmount = cashAmount.value - billAmount.value;
 
-        (returnCashAmount <= 0) 
-        ? errorMessageCashAmount(`Transaction is completed! because your bill amount is : ${billAmount.value} and 
-            given cash amount is : ${cashAmount.value} are same.`) 
+        (returnCashAmount <= 0) ?
+        errorMessageCompleteTransaction(`Transaction completed! because your biil amount : ${billAmount.value} and cash amount ${cashAmount.value} are same.`)
         : ReturnNumberOfNotes(returnCashAmount);
 
     } else {
@@ -63,6 +64,10 @@ const errorMessageBillAmount = (msg) => {
 const errorMessageCashAmount = (msg1) => {
     messageCashAmount.style.display = 'block';
     messageCashAmount.innerHTML = msg1;
+}
+const errorMessageCompleteTransaction = (msg2) => {
+   messageCompleteTransaction.style.display = 'block';
+   messageCompleteTransaction.innerHTML = msg2;
 }
 
 
